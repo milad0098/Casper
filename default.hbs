@@ -26,6 +26,15 @@
     {{! Everything else gets inserted here }}
     {{{body}}}
 
+    <aside class="sub-wrap">
+       <form id="subscribeForm" class="sub-inner-wrap">
+          <p class="sub-p">Email me when editors at verlico style publish or recommends stories</p>
+          <input type="email" name="email" required="true" class="sub-input" placeholder="Enter email">
+          <button class="sub-follow-button">Follow</button>
+          <i class="loader"></i>
+       </form>
+    </aside>
+
     <footer class="site-footer">
         <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
         <div class="inner">
