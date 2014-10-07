@@ -1,4 +1,4 @@
-# Casper
+# Casper | VERLICO
 
 The default theme for [Ghost](http://github.com/tryghost/ghost/).
 
