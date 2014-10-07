@@ -1,4 +1,4 @@
-# Casper | VERLICO
+# Casper | VERLICO INC.
 
 The default theme for [Ghost](http://github.com/tryghost/ghost/).
 
