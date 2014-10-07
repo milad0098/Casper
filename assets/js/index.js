@@ -59,6 +59,30 @@
 
         $(".scroll-down").arctic_scroll();
 
+       $("#subscribeForm").submit(function( event ) {
+          // Stop form from submitting normally
+          event.preventDefault();
+          $(".loader").css('display', 'block');
+
+          // Get some values from elements on the page:
+          var $form = $( this ),
+             $input = $form.find( "input[name='email']"),
+             term = $input.val(),
+             url = "/subscribe";
+
+          // Send the data using post
+          var posting = $.post( url, { email: term } );
+
+          // Put the results in a div
+          posting.done(function( data ) {
+             // console.log(data);
+             $(".loader").css('display', 'none');
+             $('.sub-p').html('Thank you for following verlico.');
+             $('.sub-follow-button').attr('disabled','true');
+             $input.addClass('valid').val('submitted').attr('disabled','true');
+          });
+       });
+
     });
 
     // smartresize
