@@ -531,7 +531,7 @@ margin on the iframe, cause it breaks stuff. */
 .home-template .main-header:after {
     display: block;
     content: " ";
-    width: 180px;
+    width: 195px;
     height: 130px;
     border-radius: 100%;
     position: absolute;
