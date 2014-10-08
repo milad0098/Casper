@@ -968,7 +968,9 @@ body:not(.post-template) .post-title {
     right: 0;
     width: 140px;
 }
-
+.post-footer .share>h4{
+    font-weight: 100;
+}
 .post-footer .share a {
     font-size: 1.8rem;
     display: inline-block;
