@@ -593,7 +593,8 @@ margin on the iframe, cause it breaks stuff. */
     margin-right: 8px;
 }
 
-.subscribe-button {
+.subscribe-button,
+.sub-follow-button{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -611,6 +612,13 @@ margin on the iframe, cause it breaks stuff. */
     border-radius: 3px;
     background: rgba(0,0,0,0.1);
     transition: all ease 0.3s;
+}
+.sub-follow-button{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    float:none;
+    border-color: rgb(191, 200, 205);
+    background:transparent;
 }
 .subscribe-button:before {
     font-size: 9px;
@@ -1453,7 +1461,9 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 @media only screen and (max-width: 900px) {
-
+    .sub-inner-wrap{
+        width:100%
+    }
     .main-nav {
         padding: 15px;
     }
@@ -1577,7 +1587,16 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
-
+    .sub-p{
+        width: auto;
+        padding: 0px 15px;
+    }
+    .sub-follow-button{
+        padding:0 10px;
+    }
+    .sub-input{
+        width:50%
+    }
     .main-header {
         margin-bottom: 15px;
         height: 40%;
