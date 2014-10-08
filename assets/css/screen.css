@@ -933,7 +933,7 @@ body:not(.post-template) .post-title {
     list-style: none;
     font-size: 1.4rem;
     line-height: 1;
-    font-style: italic;
+    /*font-style: italic;*/
     color: #9EABB3;
 }
 
@@ -1174,8 +1174,8 @@ body:not(.post-template) .post-title {
 .author-profile .author-meta {
     margin: 2rem 0;
     font-family: "Merriweather", serif;
-    letter-spacing: 0.01rem;
-    font-size: 1.7rem;
+    letter-spacing: 0.001rem;
+    font-size: 1.5rem;
 }
 .author-meta span {
     display: inline-block;
