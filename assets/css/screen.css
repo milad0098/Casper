@@ -514,6 +514,9 @@ margin on the iframe, cause it breaks stuff. */
     transform: rotate(-90deg);
     -webkit-animation: bounce 4s 2s infinite;
     animation: bounce 4s 2s infinite;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 18px;
+    border-radius: 100%;
 }
 
 /* Stop it bouncing and increase contrast when hovered */
