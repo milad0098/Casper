@@ -7,18 +7,9 @@
 {{#post}}
 
 {{#contentFor "meta"}}
-<!--
-   <title>{{title}}</title>
-   <meta name="description" content="{{excerpt characters="220"}}..."/>
--->
+
    <meta property="og:type" content="article" />
    <meta property="og:site_name" content="{{@blog.title}}" />
-
-<!--
-   <meta property="og:url" content="{{url absolute="true"}}" />
-   <meta property="og:title" content="{{title}}" />
-   <meta property="og:description" content="{{excerpt characters="220"}}..."/>
--->
    {{#if image}}
       <meta property="og:image" content="{{image}}"/>
    {{/if}}
@@ -35,7 +26,7 @@
    <meta property="twitter:title" content="{{title}}" />
    <meta property="twitter:description" content="{{excerpt characters="220"}}..." />
 -->
-   <meta property="twitter:image" content="{{image}}" />
+   <meta property="twitter:image" content="{{@blog.url}}/{{image}}" />
    <meta property="twitter:url" content="{{@blog.url}}" />
    <meta property="twitter:domain" content="{{@blog.url}}">
    <meta property="twitter:creator" content="@verlicostyle">
