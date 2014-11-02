@@ -1,3 +1,20 @@
+{{#contentFor "meta"}}
+   <meta property="og:type" content="website"/>
+   <meta property="og:url" content="{{@blog.url}}" />
+   <meta property="og:title" content="{{@blog.title}}" />
+   <meta property="og:site_name" content="{{@blog.title}}" />
+   <meta property="og:image" content="http://blog.verlico.com{{@blog.cover}}"/>
+   <meta property="og:description" content="{{@blog.description}}"/>
+   <meta property="fb:app_id" content="596024160485943"/>
+
+   <meta name="twitter:card" content="summary">
+   <meta name="twitter:site" content="@verlicostyle">
+   <meta name="twitter:title" content="{{@blog.title}}">
+   <meta name="twitter:description" content="{{@blog.description}}">
+   <meta name="twitter:creator" content="@verlicostyle">
+{{/contentFor}}
+
+
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
