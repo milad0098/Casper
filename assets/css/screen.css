@@ -1464,6 +1464,7 @@ figcaption {
     top: 0;
     text-align: left;
     margin-top: 0;
+    padding-top:0.6em;
     font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
     letter-spacing: 0.01rem;
     font-weight: 400;
@@ -1795,7 +1796,8 @@ img.full-img + figcaption {
         margin-top: 0;
     }
 
-    .post-content img {
+    .post-content img,
+    figcaption {
         padding: 0;
     }
 
