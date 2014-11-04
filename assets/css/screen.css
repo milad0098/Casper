@@ -1494,9 +1494,12 @@ img.full-img + figcaption {
         width: 100%;
         text-align: center;
         left: 0;
-        margin-top: 20px;
+        margin: 10px 0 20px;
         font-size: 15px;
         padding:0;
+    }
+    figcaption:before{
+        display:none;
     }
 }
 
