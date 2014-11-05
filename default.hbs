@@ -50,6 +50,17 @@
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
-
+    <script charset="utf-8" type="text/javascript">
+       window._verId = '4294967295';
+       setTimeout(function () {
+          (function (d, t) {
+             var s = d.createElement(t), x = d.getElementsByTagName(t)[0];
+             s.type = 'text/javascript';
+             s.async = true;
+             s.src = '//s3-us-west-2.amazonaws.com/verlico-static/assets/newEmbed/embed.min.js';
+             x.parentNode.insertBefore(s, x);
+          })(document, 'script');
+       }, 0);
+    </script>
 </body>
 </html>
