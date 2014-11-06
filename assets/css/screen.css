@@ -775,13 +775,13 @@ body:not(.post-template) .post-title {
     margin: 1.75rem 0 0 0;
     font-family: "Open Sans", sans-serif;
     font-size: 1.5rem;
-    line-height: 2.2rem;
+    line-height: 3.6rem;
     color: #9EABB3;
 }
 
 .author-thumb {
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
     float: left;
     margin-right: 9px;
     border-radius: 100%;
@@ -809,6 +809,7 @@ body:not(.post-template) .post-title {
     border-left: #d5dbde 1px solid;
     text-transform: uppercase;
     font-size: 1.3rem;
+    line-height: 2rem;
     white-space: nowrap;
 }
 
@@ -1633,6 +1634,11 @@ img.full-img + figcaption {
 
 }
 
+@media only screen and (max-width: 600px){
+    .post-date {
+        display: none;
+    }
+}
 
 /* ==========================================================================
    11. Media Queries - Smaller than 500px
@@ -1738,10 +1744,6 @@ img.full-img + figcaption {
         margin-right: 16px;
         padding-bottom: 2rem;
         line-height: 1.65em;
-    }
-
-    .post-date {
-        display: none;
     }
 
     .post-template .post-header {
