@@ -1650,6 +1650,9 @@ v-div + figcaption {
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
+    .blog-social-wrap{
+        display:none;
+    }
     .sub-p{
         width: auto;
         padding: 0px 15px;
