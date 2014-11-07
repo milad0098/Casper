@@ -1492,9 +1492,14 @@ figcaption:before {
 img.full-img + figcaption {
     right: -42%;
 }
-
+v-div + figcaption {
+    visibility:hidden;
+}
 
 @media only screen and (max-width: 1320px){
+    v-div + figcaption {
+        visibility:visible;
+    }
     figcaption {
         position: relative;
         width: 100%;
