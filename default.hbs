@@ -23,6 +23,13 @@
 
     {{! Page Meta - tmp }}
     {{{block "meta"}}}
+
+    <script charset="utf-8" type="text/javascript">
+        window._verId = 'GG000';
+        window._ver_v = '1.2';
+        setTimeout(function () { (function (d, t) { var s = d.createElement(t), x = d.getElementsByTagName(t)[0]; s.type = 'text/javascript'; s.async = true; s.src = '//s3-us-west-2.amazonaws.com/momently-static/embed/api.js'; x.parentNode.insertBefore(s, x); })(document, 'script');
+        }, 0);
+    </script>
 </head>
 <body class="{{body_class}}">
 
@@ -50,14 +57,6 @@
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
-
-
-    <script charset="utf-8" type="text/javascript">
-        window._verId = 'GG000';
-        window._ver_v = '1.2';
-        setTimeout(function () { (function (d, t) { var s = d.createElement(t), x = d.getElementsByTagName(t)[0]; s.type = 'text/javascript'; s.async = true; s.src = '//s3-us-west-2.amazonaws.com/momently-static/embed/api.js'; x.parentNode.insertBefore(s, x); })(document, 'script');
-        }, 0);
-    </script>
 
 
     <script>
